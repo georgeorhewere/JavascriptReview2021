@@ -55,6 +55,14 @@ print(b);
 var d = b.shift();
 print(b);
 
+// splice -- removes and adds items to the array
+// remove one item
+b.splice(2,1);
+print(b);
+// add 3 items 
+b.splice(3,0,44,66,55,70)
+print(b);
+
 
 
 
