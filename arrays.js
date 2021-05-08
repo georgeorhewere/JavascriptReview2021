@@ -27,7 +27,9 @@ print(sortedTemp)
 var ans =a.find(x=> x==2);
 print({type:"find "+ 2,ans})
 
-
+// aggregator function .. operates on al items in the array
+var res = a.reduce((t,x) =>{ return t+=x } );
+print(res);
 
 
 }
