@@ -31,13 +31,32 @@ var ans =a.find(x=> x==2);
 var res = a.reduce((t,x) =>{ return t+=x } );
 //recursion
 var res2 = factorial(5);
-
- print(res2);
+ // print(res2);
 // 
 var word1 = "stressredse";
 var stringArr = word1.split('');
-
 print(stringArr);
+
+// Mutators
+
+//Add items
+// unshift -- adds to the top of the array
+b.unshift(43,56,24);
+print(b);
+//push-- adds to the bottom of the array
+b.push(76);
+print(b);
+
+// Remove items
+// pop -- remove from the end of the array
+var t = b.pop();
+print(b);
+// shift -- remove from the top of the array
+var d = b.shift();
+print(b);
+
+
+
 
 }
 
