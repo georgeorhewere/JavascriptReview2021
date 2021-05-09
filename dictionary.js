@@ -1,6 +1,7 @@
 
 function countDuplicates(word){
-    var characterInstances = new Array();
+    
+    var characterInstances =Object.create({});
     var wordArray = word.split('');
     
     wordArray.forEach(element => {        
@@ -13,11 +14,18 @@ function countDuplicates(word){
         }
     });
 
+    var totalDuplicates =  Object.values(characterInstances).filter(x => x > 0)
+                                                         .reduce((t,c) =>{                                                             
+                                                             return t += c
+                                                         });
     
+    console.log("total : "+ totalDuplicates);
 
-    console.log(wordArray, characterInstances);
 
+}
 
+function sumDuplicates(total,value){
+    return total += value;
 }
 
 module.exports = { countDuplicates };
