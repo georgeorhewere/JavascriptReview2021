@@ -32,18 +32,25 @@ function sumDuplicates(total,value){
 
 function superReducedString(s) {
     // Write your code here
+    
     var wordArr = s.split('');
-    var editWordArr = s.split('');
-    var count = wordArr.length;
-
-    for(var x= 0; x < count; x++){
+    for(var x= 0; x < wordArr.length; x++){
+        // need to confirm if this would work in c#
+        // editing an array while iterating would not be good practice
         // check forward
-        if((x + 1) < count && wordArr[x] == wordArr[x+1]){
-            editWordArr.splice(x,2);
-            x++;            
+        if((x + 1) < wordArr.length && wordArr[x] == wordArr[x+1]){
+            wordArr.splice(x,2);
+            //x++;            
+        }
+        // check backward
+        if((x-1) >= 0 && wordArr[x-1] == wordArr[x]){            
+            wordArr.splice(x-1,2);
         }
     }
-    console.log(wordArr, editWordArr);
+
+    var result = wordArr.length > 0 ? wordArr.reduce((x,y)=> {return x += y }) : 'Empty String';
+    console.log(wordArr, result);
+    
 }
 
 module.exports = { countDuplicates, superReducedString };
