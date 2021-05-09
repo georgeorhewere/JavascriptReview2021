@@ -10,17 +10,17 @@ testSuperReduced();
 
 function testSuperReduced(){
     var word = 'abba';
-    // tests.superReducedString(word);
-    // word= 'aaabccddd';
-    // tests.superReducedString(word);
-    // word= 'aa';
-    // tests.superReducedString(word);
-    // word= 'baab';
-    // tests.superReducedString(word);
+    tests.superReducedString2(word);
+    word= 'aaabccddd';
+    tests.superReducedString2(word);
+    word= 'aa';
+    tests.superReducedString2(word);
+    word= 'baab';
+    tests.superReducedString2(word);
     word ='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
-    tests.superReducedString(word);
+    tests.superReducedString2(word);
     word='lrfkqyuqfjjfquyqkfrlkxyqvnrtyssytrnvqyxkfrzrmzlygffgylzmrzrfveulqfpdbhhbdpfqluevlqdqrrcrwddwrcrrqdql'
-    tests.superReducedString(word);
+    tests.superReducedString2(word);
 
 
 }

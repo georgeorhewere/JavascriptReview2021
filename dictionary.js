@@ -46,6 +46,7 @@ function superReducedString(s) {
         // check backward
         if((x-1) >= 0 && wordArr[x-1] == wordArr[x]){            
             wordArr.splice(x-1,2);
+            // x--;
         }
     }
 
@@ -55,7 +56,28 @@ function superReducedString(s) {
 }
 
 function superReducedString2(s) {
-    // Write your code here    
+    // Write your code here
+    var wordArr = s.split('');
+    var index = 0;
+    while(index < wordArr.length)
+    {
+        if(index + 1 < wordArr.length && wordArr[index] == wordArr[index + 1])
+        {
+            wordArr.splice(index,2);
+            index--;
+        }else
+        {
+            index++;
+        }
+    }
+    var result = wordArr.length > 0 ? wordArr.reduce((x,y)=> {return x += y }) : 'Empty String';
+    console.log("final result", result, wordArr);
+
 }
 
-module.exports = { countDuplicates, superReducedString, superReducedString2 };
+function palindromeChainLength(n){
+
+
+}
+
+module.exports = { countDuplicates, superReducedString, superReducedString2, palindromeChainLength };
