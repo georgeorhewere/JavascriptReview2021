@@ -1,5 +1,8 @@
-let arr = require('./arrays')
+let arr = require('./arrays');
+let tests = require('./dictionary');
 
 console.log("Hello");
 
-arr.testArrays();
+// arr.testArrays();
+var word1 = "baabbccdef";
+tests.countDuplicates(word1);
