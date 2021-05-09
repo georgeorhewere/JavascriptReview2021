@@ -30,4 +30,20 @@ function sumDuplicates(total,value){
     return total += value;
 }
 
-module.exports = { countDuplicates };
+function superReducedString(s) {
+    // Write your code here
+    var wordArr = s.split('');
+    var editWordArr = s.split('');
+    var count = wordArr.length;
+
+    for(var x= 0; x < count; x++){
+        // check forward
+        if((x + 1) < count && wordArr[x] == wordArr[x+1]){
+            editWordArr.splice(x,2);
+            x++;            
+        }
+    }
+    console.log(wordArr, editWordArr);
+}
+
+module.exports = { countDuplicates, superReducedString };
