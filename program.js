@@ -10,13 +10,19 @@ testSuperReduced();
 
 function testSuperReduced(){
     var word = 'abba';
+    // tests.superReducedString(word);
+    // word= 'aaabccddd';
+    // tests.superReducedString(word);
+    // word= 'aa';
+    // tests.superReducedString(word);
+    // word= 'baab';
+    // tests.superReducedString(word);
+    word ='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
     tests.superReducedString(word);
-    word= 'aaabccddd';
+    word='lrfkqyuqfjjfquyqkfrlkxyqvnrtyssytrnvqyxkfrzrmzlygffgylzmrzrfveulqfpdbhhbdpfqluevlqdqrrcrwddwrcrrqdql'
     tests.superReducedString(word);
-    word= 'aa';
-    tests.superReducedString(word);
-    word= 'baab';
-    tests.superReducedString(word);
+
+
 }
 
 function testDuplicates() {
