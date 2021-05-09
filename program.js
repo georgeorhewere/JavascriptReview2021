@@ -6,7 +6,9 @@ console.log("Hello");
 // arr.testArrays();
 // test 1
 var word1 = "baabbccdef";
-tests.countDuplicates(word1);
+var result = tests.countDuplicates(word1);
+console.log(word1 + ' has ' + result + ' duplicates');
 // test 2
 word1 = "abcdef";
-tests.countDuplicates(word1);
+result = tests.countDuplicates(word1);
+console.log(word1 + ' has ' + result + ' duplicates');

@@ -1,6 +1,6 @@
 
-function countDuplicates(word){
-    
+function countDuplicates(word)
+{    
     var characterInstances =Object.create({});
     var wordArray = word.split('');
     var duplicates = 0;
@@ -23,8 +23,7 @@ function countDuplicates(word){
     //                                                          return t += c
     //                                                      });
     
-    console.log("total : "+ duplicates);
-
+    return duplicates;
 }
 
 function sumDuplicates(total,value){
