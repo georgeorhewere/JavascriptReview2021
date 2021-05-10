@@ -80,7 +80,7 @@ function palindromeChainLength(n){
     // get palindrome of n 
     var numOfSteps = 0;
     var reverseNumber = reverseNum(n);
-    
+
     if(n == reverseNumber){
         return numOfSteps
     }
@@ -117,5 +117,17 @@ function stayPositive(arr){
 
     console.log("minimum start " + startValue);
 }
+
+/*
+ * Complete the 'camelcase' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts STRING s as parameter.
+ */
+
+function camelcase(s) {
+
+}
+
 
 module.exports = { countDuplicates, superReducedString, superReducedString2, palindromeChainLength, stayPositive };
