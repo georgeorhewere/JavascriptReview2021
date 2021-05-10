@@ -12,7 +12,12 @@ testPalindromeCheck();
 
 function testPalindromeCheck(){
     
-    tests.palindromeChainLength(87);
+    var n =87;
+    var results = tests.palindromeChainLength(n);
+    console.log("number of steps to make "+ n +" a palindrome is " + results)
+    n =77;
+    var results = tests.palindromeChainLength(n);
+    console.log("number of steps to make "+ n +" a palindrome is " + results)
 
 }
 

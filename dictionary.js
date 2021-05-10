@@ -92,8 +92,8 @@ function palindromeChainLength(n){
             numOfSteps++;
         }
     }
-
-    console.log(numOfSteps, n, reverseNumber);
+    return numOfSteps;
+    /// console.log(numOfSteps, n, reverseNumber);
 } 
 
 function reverseNum(n)
