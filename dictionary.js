@@ -78,6 +78,22 @@ function superReducedString2(s) {
 function palindromeChainLength(n){
 
 
+} 
+
+function stayPositive(arr){
+    var startValue = 1;
+    arr.unshift(startValue);
+    var minStart = arr.reduce((x,t)=>{
+        var temp = x + t;
+        if(temp <= 0){
+            var addNumber = Math.abs(temp) + 1;
+            startValue += addNumber;
+            temp += addNumber;
+        }
+        return temp;
+    });
+
+    console.log("minimum start " + startValue);
 }
 
-module.exports = { countDuplicates, superReducedString, superReducedString2, palindromeChainLength };
+module.exports = { countDuplicates, superReducedString, superReducedString2, palindromeChainLength, stayPositive };
