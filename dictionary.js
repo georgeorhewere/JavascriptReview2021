@@ -77,8 +77,30 @@ function superReducedString2(s) {
 
 function palindromeChainLength(n){
 
+    // get palindrome of n 
+    var numOfSteps = 0;
+    var reverseNumber = reverseNum(n);
+    
+    if(n == reverseNumber){
+        return numOfSteps
+    }
+    else
+    {
+        while(n != reverseNumber){
+            n += reverseNumber;
+            reverseNumber = reverseNum(n);
+            numOfSteps++;
+        }
+    }
 
+    console.log(numOfSteps, n, reverseNumber);
 } 
+
+function reverseNum(n)
+{
+    var numArr = n.toString().split('')
+    return +numArr.reduceRight((x,t)=>{ return  x +=t; });
+}
 
 function stayPositive(arr){
     var startValue = 1;

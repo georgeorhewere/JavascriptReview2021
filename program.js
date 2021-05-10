@@ -7,8 +7,14 @@ console.log("Hello");
 //testDuplicates();
 // testSuperReduced();
 
-testStayPositive();
+// testStayPositive();
+testPalindromeCheck();
 
+function testPalindromeCheck(){
+    
+    tests.palindromeChainLength(87);
+
+}
 
 function testStayPositive(){
     var arr = [ -4, 3,2,1]
